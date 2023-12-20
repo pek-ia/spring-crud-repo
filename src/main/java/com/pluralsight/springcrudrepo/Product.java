@@ -23,4 +23,33 @@ public class Product {
         this.name = name;
         this.unitPrice = unitPrice;
     }
+
+    public int getProductId() {
+        return productId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getUnitPrice() {
+        return unitPrice;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setUnitPrice(double unitPrice) {
+        this.unitPrice = unitPrice;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "productId=" + productId +
+                ", name='" + name + '\'' +
+                ", unitPrice=" + unitPrice +
+                '}';
+    }
 }
